@@ -1,5 +1,5 @@
-pkgname=anydesk
-pkgver=5.5.3
+pkgname=anydesk-bin
+pkgver=5.5.4
 pkgrel=1
 pkgdesc="'AnyDesk Free' is an All-In-One Software for Remote Support"
 arch=('i686' 'x86_64')
@@ -11,8 +11,8 @@ optdepends=('libpulse')
 source_i686=(https://download.anydesk.com/linux/anydesk-${pkgver}-i386.tar.gz)
 source_x86_64=(https://download.anydesk.com/linux/anydesk-${pkgver}-amd64.tar.gz)
 
-sha256sums_i686=('9e99cebe0229a01ccd519255874ebaad0fea28466f2f6261ba35f6b9317a24ba')
-sha256sums_x86_64=('784c051ee0a1d9fbb4238a246d11e4fa5df6538a5b64cbfce13559a09b6dc3fa')
+sha256sums_i686=('79be3846fc51088bc5461752a6f66dae4bb5b9772c84fdd2cb8ece1b8965ba27')
+sha256sums_x86_64=('7a96be4d607b4115999610d324913d57bd7c2fad7137d465276ac157f80fc2e7')
 
 package() {
     install -Dm 755 "${srcdir}/anydesk-${pkgver}/anydesk" "${pkgdir}/usr/bin/anydesk"
